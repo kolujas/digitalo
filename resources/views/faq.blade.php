@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+<!-- @extends('layouts.layout')
 @section('content')
 <section class="faq">
   <h2>Preguntas frecuentes</h2>
@@ -13,4 +13,4 @@
 
   </div>
 </section>
-@endsection
+@endsection -->

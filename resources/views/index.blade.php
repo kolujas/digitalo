@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('content')
-<section class="imagen-principal">
+<!-- <section class="imagen-principal">
   <div>
     <img src="img/banner-principal.jpg" alt="Banner del sitio">
     <h2>Frase del sitio</h2>
@@ -45,6 +45,6 @@
   <div class="imagen-formulario">
     <img width="400px" src="img/ecommerce.jpg" alt="test">
   </div>
-</section>
+</section> -->
 
 @endsection
