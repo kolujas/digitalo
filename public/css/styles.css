@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+  html, body { 
+    overflow-x: hidden;
+}
+
+
 ul, ol{
   list-style: none;
 }
@@ -45,11 +50,11 @@ a{
 }
 
 .cont .frase h2{
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .cont .frase p{
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 /* body{
@@ -526,5 +531,13 @@ textarea{
   padding: 3%;
 }
 
+
+.cont .frase h2{
+  font-size: 4.5rem;
+}
+
+.cont .frase p{
+  font-size: 2rem;
+}
 
 }

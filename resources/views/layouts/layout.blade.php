@@ -49,9 +49,9 @@
         <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
       </div>
       </div>
-      
-
-    
+      <div>
+        <span class="mt-5">Hola@digitalo.com.ar</span>
+      </div>
     </div>
       
   
