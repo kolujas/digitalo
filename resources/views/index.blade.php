@@ -1,50 +1,41 @@
-@extends('layouts.layout')
-@section('content')
-<!-- <section class="imagen-principal">
-  <div>
-    <img src="img/banner-principal.jpg" alt="Banner del sitio">
-    <h2>Frase del sitio</h2>
-    <span>Algo mas de la frase</span>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<section class="servicios">
-    <div>
-      <img src="img/ecommerce.jpg" alt="">
-      <h3>E-commerce</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, voluptate natus consequatur quaerat esse consectetur officia ab. Excepturi, laborum consequuntur.</p>
-      <a href="#">Ver más</a>
-    </div>
-    <div>
-      <img src="img/ecommerce.jpg" alt="">
-      <h3>Sitio institucional</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex atque non modi placeat quae aut incidunt delectus temporibus labore, at.</p>
-      <a href="#">Ver más</a>
-    </div>
-    <div>
-      <img src="img/ecommerce.jpg" alt="">
-      <h3>Sitio administrable</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam blanditiis quisquam illum maiores. Deserunt sapiente sunt tenetur eos, nesciunt quae.</p>
-      <a href="#">Ver más</a>
-    </div>
-</section>
-<section class="llamada-accion">
-  <strong>Potencia tu emprendimiento</strong>
-</section>
-<h2 align="center">Contactate con nosotros</h2>
-<section class="section-formulario">
-  <div class="div-formulario">
-    <form class="formulario" method="post">
-      <span>Nombre</span><input type="text" name="name" placeholder="Ingresa tu nombre" value=""><strong></strong>
-      <span>Email</span><input type="email" name="email" placeholder="Ingresa tu email" value=""><strong></strong>
-      <span>Telefono</span><input type="text" name="phone" placeholder="Ingresa tu telefono" value=""><strong></strong>
-      <span>Comentarios</span><textarea name="name" rows="6" cols="40"></textarea><strong></strong>
-      <button type="submit" name="button">Enviar</button>
-    </form>
-  </div>
-  <div class="imagen-formulario">
-    <img width="400px" src="img/ecommerce.jpg" alt="test">
-  </div>
-</section> -->
+        <title>Digitalo</title>
 
-@endsection
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One&display=swap" rel="stylesheet">
+
+        <!-- iconos -->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!-- css -->
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+
+    </head>
+    <body>
+     <header class="header">
+        <h1>Digitalo</h1>
+        <a href="#" class="menu">
+            <img class="menuIcono" src="img/menu.svg" alt="menu icono digitalo">
+        </a>
+        <div class="sidebar closed">
+        <a href="#" class="cerarMenu ion-android-close">
+        </a>
+            <ul class="ul-menu">
+               <li><a href="#">¿Qué ofrecemos?</a></li>
+               <li> <a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+     </header>    
+        
+        <script src="js/sidebar.js"></script>
+    </body>
+</html>

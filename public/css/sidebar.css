@@ -1,0 +1,55 @@
+.menu{
+    cursor: pointer;
+}
+
+.menuIcono{
+    height: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 55%;
+    background-color: #222;
+    transition: 500ms;
+}
+
+.sidebar.opened{
+    transform: translateX(0%);
+}
+
+.sidebar.closed{
+    transform: translateX(-100%);
+}
+
+.sidebar ul{
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.sidebar ul li{
+    margin: 1.2rem 0;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    left: 0;
+    top: 0;
+    right: 0rem;
+    text-decoration: none;
+}
+
+.cerarMenu{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
