@@ -30,3 +30,45 @@ font-family: 'Archivo Narrow', sans-serif; */
     margin-top: 1rem;
 }
 
+.cerrarMenu{
+    outline: none;
+}
+
+/* banner-video */
+
+
+/* servicios */
+
+.servicios{
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.servicios h2{
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.servicios p{
+    font-family: 'Roboto Slab', serif;
+    padding: 0 2rem;
+}
+
+.cards-servicios{
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    border: 1px solid #e2e2e2;
+    width: 20rem;
+}
+
+.cards-servicios .ion-steam{
+    font-size: 3rem;
+    color: #171A21;
+}
+
+.cards-servicios h3{
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1rem;
+}
+
