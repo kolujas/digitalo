@@ -16,6 +16,7 @@
 
         <!-- css -->
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/web/inicio.css') }}">
         <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
         @yield('css')
     </head>
@@ -42,8 +43,8 @@
         
         @yield('main')
         
-        <footer>
-            <p>Copyright</p>
+        <footer class="footer">
+            <p>Desarrollado por Digitalo &copy</p>
         </footer>
 
         <script src="{{ asset('js/sidebar.js') }}"></script>
