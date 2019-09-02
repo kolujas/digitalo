@@ -11,10 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-        <!-- iconos -->
+        <!-- Iconos -->
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-        <!-- css -->
+        <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
         <link rel="stylesheet" href="{{ asset('css/web/inicio.css') }}">
         <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
