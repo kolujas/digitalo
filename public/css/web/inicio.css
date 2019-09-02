@@ -119,6 +119,152 @@
     margin: 1rem 0;
 }
 
+/* newsletter */
+
+.separacion-dos{
+    min-height: 3rem;    
+    margin: 3rem 0;
+    padding: 2rem 0;
+    background: #252525;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.separacion-dos .divPadre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0%;
+}
+
+.separacion-dos h3{
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 8%;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.separacion-dos button{
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 5rem;
+    height: 2rem;
+    outline: none;
+    border: 1px solid #fff;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.suscribirme-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suscribirme-div .div-input{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.suscribirme-div .div-button{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.suscribirme-div input{
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    padding-left: .5rem;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    color: #000;
+    font-weight: 800;
+}
+
+.suscribirme-div input::placeholder{
+    color: #000;
+    font-weight: 800;
+}
+
+.suscribirme-div button{
+    margin-top: 2rem;
+    width: 10rem;
+    border-radius: 2px;
+}
+
+/* contacto */
+
+.contacto h2{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto form .div-inputs{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contacto input{
+    width: 80%;
+    height: 2rem;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.contacto input::placeholder{
+    font-weight: 1000;
+    color: #777;
+}
+
+.contacto textarea{
+    width: 80%;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    height: 5rem;
+    resize: none;
+    outline: none;
+}
+
+.contacto textarea::placeholder{
+    font-weight: 1000;
+    color: #777;
+}
+
+.contacto .div-submit{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contacto button{
+    border: none;
+    background: #252525;
+    color: #fff;
+    padding: .7rem;
+    width: 45%;
+    border-radius: 2px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 
 /* MD */
 @media(min-width: 768px){

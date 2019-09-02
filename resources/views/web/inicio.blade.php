@@ -84,9 +84,6 @@
                 
         </section>
 
-
-
-
         <section class="portafolio">
             <h2>Portfolio</h2>
             <div class="cards-portafolio">
@@ -116,5 +113,41 @@
                 </figure>
             </div>
         </section> 
+
+        <section class="separacion-dos">
+            <div class="divPadre">
+                <div>
+                    <h3>Suscribite a nuestro newsletter para mantenerte en contacto</h3>
+                </div>
+                
+                <div class="suscribirme-div">
+                    <div class="div-input">
+                        <input type="text" placeholder="Ingresa tu email" name="newsletter">
+                    </div>
+                    <div class="div-button">
+                        <button>Suscribirme</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form action="/" method="post">
+                <div class="div-inputs">
+                    <input type="text" name="nombre" placeholder="nombre">
+                </div>
+                <div class="div-inputs">
+                    <input type="email" name="correo" placeholder="email">
+                </div>
+                <div class="div-inputs">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+                </div>
+
+                <div class="div-submit">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
 @endsection
