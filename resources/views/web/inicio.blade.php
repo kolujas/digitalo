@@ -1,6 +1,7 @@
 @extends('layout.index')
 
 @section('css')
+    <link href="{{ asset('css/Validation.css') }}" rel="stylesheet">
     <link href="{{ asset('css/web/inicio.css') }}" rel="stylesheet">
 @endsection
 
@@ -133,21 +134,61 @@
 
         <section class="contacto">
             <h2>Contacto</h2>
-            <form action="/" method="post">
+            <form action="/" method="post" class="form-validate">
                 <div class="div-inputs">
-                    <input type="text" name="nombre" placeholder="nombre">
+                    <input type="text"
+                        name="nombre"
+                        placeholder="nombre"
+                        data-rules="required,min:2,max:60"
+                        value="{{old('nombre')}}">
+                    <div class="invalid-tooltip"
+                        @if($errors->has('nombre'))
+                            style="display: block;"
+                        @endif>
+                        @if($errors->has('nombre'))
+                            {{ $errors->first('nombre') }}
+                        @endif
+                    </div>
                 </div>
                 <div class="div-inputs">
-                    <input type="email" name="correo" placeholder="email">
+                    <input type="email"
+                        name="correo"
+                        placeholder="email"
+                        value="{{old('correo')}}"
+                        data-rules="required,email,max:100">
+                    <div class="invalid-tooltip"
+                        @if($errors->has('correo'))
+                            style="display: block;"
+                        @endif>
+                        @if($errors->has('correo'))
+                            {{ $errors->first('correo') }}
+                        @endif
+                    </div>
                 </div>
                 <div class="div-inputs">
-                    <textarea name="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    <textarea name="mensaje"
+                        cols="30"
+                        rows="10"
+                        placeholder="mensaje"
+                        data-rules="required">{{old('mensaje')}}</textarea>
+                    <div class="invalid-tooltip"
+                        @if($errors->has('mensaje'))
+                            style="display: block;"
+                        @endif>
+                        @if($errors->has('mensaje'))
+                            {{ $errors->first('mensaje') }}
+                        @endif
+                    </div>
                 </div>
 
                 <div class="div-submit">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="form-submit">Enviar</button>
                 </div>
             </form>
         </section>
     </main>
+@endsection
+
+@section('js')
+    <script type="text/javascript" src="{{asset('js/Validation.js')}}"></script>
 @endsection
