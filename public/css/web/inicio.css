@@ -218,6 +218,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .contacto input{
@@ -226,6 +227,7 @@
     font-family: 'Julius Sans One', sans-serif;
     padding-left: 1rem;
     outline: none;
+    transition: 500ms;
 }
 
 .contacto input::placeholder{
@@ -241,6 +243,7 @@
     height: 5rem;
     resize: none;
     outline: none;
+    transition: 500ms;
 }
 
 .contacto textarea::placeholder{
@@ -263,6 +266,57 @@
     width: 45%;
     border-radius: 2px;
     font-family: 'Julius Sans One', sans-serif;
+}
+
+/* contacto validacion */
+
+.div-inputs input:focus, .div-inputs textarea:focus{
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+.invalid-tooltip{
+    border-radius: 3px;
+  background: #e16363;
+  margin-top: 1rem;
+  padding: .7rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: .8rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.opened{
+    display: block;
+}
+
+.closed{
+    display: none;
+}
+
+.div-inputs input.invalid, .div-inputs textarea.invalid{
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+.div-inputs input.valid:focus, .div-inputs input.invalid:focus, .div-inputs textarea.valid:focus, .div-inputs textarea.invalid:focus {
+    box-shadow: none;
+}
+
+
+/* Whatsapp */
+
+.whatsapp{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9999;
+}
+
+.whatsapp img{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
 }
 
 

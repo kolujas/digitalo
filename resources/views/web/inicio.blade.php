@@ -141,9 +141,11 @@
                         placeholder="nombre"
                         data-rules="required,min:2,max:60"
                         value="{{old('nombre')}}">
-                    <div class="invalid-tooltip"
+                    <div
                         @if($errors->has('nombre'))
-                            style="display: block;"
+                            class="invalid-tooltip opened"
+                        @else
+                        class="invalid-tooltip closed"
                         @endif>
                         @if($errors->has('nombre'))
                             {{ $errors->first('nombre') }}
@@ -156,9 +158,11 @@
                         placeholder="email"
                         value="{{old('correo')}}"
                         data-rules="required,email,max:100">
-                    <div class="invalid-tooltip"
+                    <div
                         @if($errors->has('correo'))
-                            style="display: block;"
+                            class="invalid-tooltip opened"
+                        @else
+                            class="invalid-tooltip closed"
                         @endif>
                         @if($errors->has('correo'))
                             {{ $errors->first('correo') }}
@@ -171,9 +175,11 @@
                         rows="10"
                         placeholder="mensaje"
                         data-rules="required">{{old('mensaje')}}</textarea>
-                    <div class="invalid-tooltip"
+                    <div
                         @if($errors->has('mensaje'))
-                            style="display: block;"
+                            class="invalid-tooltip opened"
+                        @else
+                        class="invalid-tooltip closed"
                         @endif>
                         @if($errors->has('mensaje'))
                             {{ $errors->first('mensaje') }}
@@ -186,6 +192,11 @@
                 </div>
             </form>
         </section>
+
+        <div class="whatsapp">
+            <a target="_blank" href="https://wa.me/541167172626"><img src="/img/wsp.png" alt="Icono de whatsapp"></a>
+        </div>
+
     </main>
 @endsection
 
