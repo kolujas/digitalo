@@ -213,12 +213,24 @@
     flex-wrap: wrap;
 }
 
-.contacto form .div-inputs{
+.contacto form .div-group{
     flex-basis: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
     flex-wrap: wrap;
+}
+
+.contacto form .div-group.inputs .div-inputs{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contacto form .div-group.inputs .div-inputs:last-of-type{
+    margin-bottom: 0;
 }
 
 .contacto input{
@@ -270,7 +282,7 @@
 
 /* contacto validacion */
 
-.div-inputs input:focus, .div-inputs textarea:focus{
+.div-group input:focus, .div-group textarea:focus{
     box-shadow: none;
     border: 1px solid #000;
 }
@@ -294,12 +306,12 @@
     display: none;
 }
 
-.div-inputs input.invalid, .div-inputs textarea.invalid{
+.div-group input.invalid, .div-group textarea.invalid{
     box-shadow: none;
     border: 1px solid #000;
 }
 
-.div-inputs input.valid:focus, .div-inputs input.invalid:focus, .div-inputs textarea.valid:focus, .div-inputs textarea.invalid:focus {
+.div-group input.valid:focus, .div-group input.invalid:focus, .div-group textarea.valid:focus, .div-group textarea.invalid:focus {
     box-shadow: none;
 }
 
@@ -322,11 +334,89 @@
 
 /* MD */
 @media(min-width: 768px){
-    
+
+    /* Servicios */
+    .servicios{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .cards-servicios{
+        width: 20rem;
+    } 
+
+    /* portafolio */
+
+    .portafolio h2{
+        width: 100%;
+    }
+
+    .portafolio{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .portafolio.impar::after {
+        content: "";
+        width: 20rem;
+    }
+
+    .cards-portafolio{
+        width: 20rem;
+    }
+
+    /* newsletter */
+
+    .divPadre h3{
+        margin-bottom: 1.5rem;
+    }
+
+    .suscribirme-div{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .suscribirme-div button{
+        margin-top: 0;
+        margin-left: .5rem;
+        width: 10rem;
+        border-radius: 2px;
+    }
+
+    /* contacto */
+
+    .contacto form .inputs{
+        flex-basis: 50%;
+    }
+
+    .contacto form .div-group.inputs .div-inputs{
+        justify-content: flex-end;
+        padding-right: 1rem
+    }
+
+    .contacto form .mensaje{
+        flex-basis: 50%;
+        justify-content: flex-start;
+        padding-left: 1rem
+    }
+
+    .contacto form .div-group .invalid-tooltip{
+        width: 80%;
+        text-align: center;
+        height: 2.5rem;
+    }
+
+    .error-textarea{
+        height: 8.9rem !important;
+    }
 }
 
 /* LG */
 @media(min-width: 1024px){
+    
+
     .servicios .cards-servicios{
         position: relative;
         transition: 500ms;

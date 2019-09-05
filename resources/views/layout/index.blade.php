@@ -33,9 +33,8 @@
 
                 <ul class="ul-menu">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">¿Qué ofrecemos?</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Desarrollo Web</a></li>
+                    <li><a href="#">Marketing Digital</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </div>

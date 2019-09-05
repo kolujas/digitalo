@@ -85,7 +85,7 @@
                 
         </section>
 
-        <section class="portafolio">
+        <section class="portafolio impar">
             <h2>Portfolio</h2>
             <div class="cards-portafolio">
                 <figure>
@@ -135,41 +135,44 @@
         <section class="contacto">
             <h2>Contacto</h2>
             <form action="/" method="post" class="form-validate">
-                <div class="div-inputs">
-                    <input type="text"
-                        name="nombre"
-                        placeholder="nombre"
-                        data-rules="required,min:2,max:60"
-                        value="{{old('nombre')}}">
-                    <div
-                        @if($errors->has('nombre'))
-                            class="invalid-tooltip opened"
-                        @else
-                        class="invalid-tooltip closed"
-                        @endif>
-                        @if($errors->has('nombre'))
-                            {{ $errors->first('nombre') }}
-                        @endif
-                    </div>
-                </div>
-                <div class="div-inputs">
-                    <input type="email"
-                        name="correo"
-                        placeholder="email"
-                        value="{{old('correo')}}"
-                        data-rules="required,email,max:100">
-                    <div
-                        @if($errors->has('correo'))
-                            class="invalid-tooltip opened"
-                        @else
+                <div class="div-group inputs">
+                    <div class="div-inputs">
+                        <input type="text"
+                            name="nombre"
+                            placeholder="nombre"
+                            data-rules="required,min:2,max:60"
+                            value="{{old('nombre')}}">
+                        <div
+                            @if($errors->has('nombre'))
+                                class="invalid-tooltip opened"
+                            @else
                             class="invalid-tooltip closed"
-                        @endif>
-                        @if($errors->has('correo'))
-                            {{ $errors->first('correo') }}
-                        @endif
+                            @endif>
+                            @if($errors->has('nombre'))
+                                {{ $errors->first('nombre') }}
+                            @endif
+                        </div>
+                    </div>
+                    <div class="div-inputs">
+                        <input type="email"
+                            name="correo"
+                            placeholder="email"
+                            value="{{old('correo')}}"
+                            data-rules="required,email,max:100">
+                        <div
+                            @if($errors->has('correo'))
+                                class="invalid-tooltip opened"
+                            @else
+                                class="invalid-tooltip closed"
+                            @endif>
+                            @if($errors->has('correo'))
+                                {{ $errors->first('correo') }}
+                            @endif
+                        </div>
                     </div>
                 </div>
-                <div class="div-inputs">
+
+                <div class="div-group mensaje">
                     <textarea name="mensaje"
                         cols="30"
                         rows="10"
@@ -201,5 +204,6 @@
 @endsection
 
 @section('js')
+    <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/Validation.js')}}"></script>
 @endsection
