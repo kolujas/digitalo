@@ -1,7 +1,10 @@
+<?php
+    /** @var object[] $validation */
+?>
+
 @extends('layout.index')
 
 @section('css')
-    <link href="{{ asset('css/Validation.css') }}" rel="stylesheet">
     <link href="{{ asset('css/web/inicio.css') }}" rel="stylesheet">
 @endsection
 
@@ -134,19 +137,23 @@
 
         <section class="contacto">
             <h2>Contacto</h2>
-            <form action="/" method="post" class="form-validate">
+            <form action="/contactar"
+                method="post"
+                class="form-validate"
+                data-rules="{{$validation->rules}}"
+                data-messages="{{$validation->messages}}">
+                @csrf
                 <div class="div-group inputs">
                     <div class="div-inputs">
                         <input type="text"
                             name="nombre"
                             placeholder="nombre"
-                            data-rules="required,min:2,max:60"
                             value="{{old('nombre')}}">
                         <div
                             @if($errors->has('nombre'))
-                                class="invalid-tooltip opened"
+                                class="invalid-tooltip showed"
                             @else
-                            class="invalid-tooltip closed"
+                                class="invalid-tooltip"
                             @endif>
                             @if($errors->has('nombre'))
                                 {{ $errors->first('nombre') }}
@@ -157,11 +164,10 @@
                         <input type="email"
                             name="correo"
                             placeholder="email"
-                            value="{{old('correo')}}"
-                            data-rules="required,email,max:100">
+                            value="{{old('correo')}}">
                         <div
                             @if($errors->has('correo'))
-                                class="invalid-tooltip opened"
+                                class="invalid-tooltip showed"
                             @else
                                 class="invalid-tooltip closed"
                             @endif>
@@ -176,11 +182,10 @@
                     <textarea name="mensaje"
                         cols="30"
                         rows="10"
-                        placeholder="mensaje"
-                        data-rules="required">{{old('mensaje')}}</textarea>
+                        placeholder="mensaje">{{old('mensaje')}}</textarea>
                     <div
                         @if($errors->has('mensaje'))
-                            class="invalid-tooltip opened"
+                            class="invalid-tooltip showed"
                         @else
                         class="invalid-tooltip closed"
                         @endif>
@@ -205,5 +210,5 @@
 
 @section('js')
     <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/Validation.js')}}"></script>
+    <script id="validation_autoload" type="text/javascript" src="{{asset('js/Validation/autoload.js')}}"></script>
 @endsection

@@ -4,5 +4,4 @@ let invalidTooltip = document.querySelector('textarea + .invalid-tooltip');
 
 submit.addEventListener('click', function(){
     mensaje.classList.add("error-textarea");
-    console.log(mensaje);
 });

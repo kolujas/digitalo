@@ -289,21 +289,18 @@
 
 .invalid-tooltip{
     border-radius: 3px;
-  background: #e16363;
-  margin-top: 1rem;
-  padding: .7rem;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: .8rem;
-  color: #fff;
-  font-weight: 800;
-}
-
-.opened{
-    display: block;
-}
-
-.closed{
+    background: #e16363;
+    margin-top: 1rem;
+    padding: .7rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 800;
     display: none;
+}
+
+.showed{
+    display: block;
 }
 
 .div-group input.invalid, .div-group textarea.invalid{
