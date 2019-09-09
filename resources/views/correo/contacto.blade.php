@@ -19,7 +19,7 @@
 				<div style="width: 100%; text-align: center">
 					<a style="text-decoration:none;border-radius:5px;padding:11px 23px;color:white;background-color: rgb(32, 101, 171);"target="_blank" href="epem.com.ar">Ir a la página</a>
 				</div>
-				<p style="color: #ffffff;font-size: 1.1rem;text-align:center;margin:30px 0 0;padding: 1rem;background-color: rgba(32, 101, 171, 0.65);">© Digitalo: <a target="_blank" href="https://digitalo.com.ar">digitalo.com.ar</a></p>
+				<p style="color: #ffffff;font-size: 1.1rem;text-align:center;margin:30px 0 0;padding: 1rem;background-color: rgba(32, 101, 171, 0.65);">Desarrollado por Digitalo ©</a></p>
 			</div>
 		</td>
 	</tr>

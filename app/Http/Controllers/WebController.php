@@ -29,6 +29,7 @@
                     'mensaje:required' => 'El mensaje no puede estar vacio.',
                 ]),
             ];
+            
             return view('web.inicio', [
                 'validation' => $validation,
             ]);
