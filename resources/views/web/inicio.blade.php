@@ -120,7 +120,7 @@
 
         <section class="separacion-dos">
             <div class="divPadre">
-                <div>
+                <div class="divH3">
                     <h3>Suscribite a nuestro newsletter para mantenerte en contacto</h3>
                 </div>
                 

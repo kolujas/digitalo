@@ -409,6 +409,21 @@
 
 /* LG */
 @media(min-width: 1024px){
+
+    .servicios{
+        justify-content: center;
+        margin: 4rem auto;
+        width: 75rem;
+    }
+
+    .servicios p{
+        padding: 0 20rem;
+    }
+
+    .cards-servicios p{
+        padding: 0;
+    }
+
     .servicios .cards-servicios{
         position: relative;
         transition: 500ms;
@@ -439,9 +454,39 @@
         left: 0;
         right: 0;
     }
+
+    /* portafolio */
+
+    .cards-portafolio{
+        width: 30rem;
+    }
+
+    /* newsletter */
+
+    .divH3{
+        width: 100%;
+    }
+
+    /* contacto */
+
+    .contacto form {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contacto .div-submit{
+        margin: 1rem;
+    }
 }
 
 /* XL */
 @media(min-width: 1200px){
 
+    .portafolio{
+        justify-content: center;
+    }
+    
+    .portafolio.impar::after {
+        display: none;
+    }
 }
