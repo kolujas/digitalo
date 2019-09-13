@@ -21,21 +21,33 @@
         @yield('css')
     </head>
     <body>
-        <header class="header">
-            <h1>Digitalo</h1>
-
-            <a href="#" class="menu">
-                <img class="menuIcono" src="img/menu.svg" alt="menu icono digitalo">
+        <header class="header nav-menu top-menu">
+            <a href="#" class="btnSidebar">
+                <img class="btnIcon" src="img/menu.svg" alt="menu icono digitalo">
             </a>
 
+            <h1>Digitalo</h1>
+
             <div class="sidebar closed">
-                <a href="#" class="cerarMenu ion-android-close"></a>
+                <a href="#" class="btnClose ion-android-close"></a>
 
                 <ul class="ul-menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Desarrollo Web</a></li>
-                    <li><a href="#">Marketing Digital</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">
+                        Inicio
+                        <span class="border"></span>
+                    </a></li>
+                    <li><a href="#">
+                        Desarrollo Web
+                        <span class="border"></span>
+                    </a></li>
+                    <li><a href="#">
+                        Marketing Digital
+                        <span class="border"></span>
+                    </a></li>
+                    <li><a href="#">
+                        Contacto
+                        <span class="border"></span>
+                    </a></li>
                 </ul>
             </div>
         </header>
@@ -46,6 +58,7 @@
             <p>Desarrollado por Digitalo &copy</p>
         </footer>
 
+        <script src="{{ asset('js/index.js') }}"></script>
         <script src="{{ asset('js/sidebar.js') }}"></script>
         @yield('js')
     </body>

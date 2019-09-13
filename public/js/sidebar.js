@@ -1,16 +1,22 @@
-const menu = document.querySelector('.menu');
-const sidebar = document.querySelector('.sidebar');
-const cerrar = document.querySelector('.cerarMenu');
+let Sidebar = {
+    btnOpen: document.querySelector('.btnSidebar'),
+    element: document.querySelector('.sidebar'),
+    btnClose: document.querySelector('.sidebar .btnClose'),
+    /** The Sidebar's loader */
+    load(){
+        this.btnOpen.addEventListener("click", function(e){
+            e.preventDefault();
+            Sidebar.element.classList.add('opened');
+            Sidebar.element.classList.remove('closed');
+        })
+        this.btnClose.addEventListener("click", function(e){
+            e.preventDefault();
+            Sidebar.element.classList.remove('opened');
+            Sidebar.element.classList.add('closed');
+        })
+    },
+};
 
-
-menu.addEventListener("click", function(e){
-    e.preventDefault();
-    sidebar.classList.add('opened');
-    sidebar.classList.remove('closed');
-})
-
-cerrar.addEventListener("click", function(e){
-    e.preventDefault();
-    sidebar.classList.add('closed');
-    sidebar.classList.remove('opened');
-})
+document.addEventListener('DOMContentLoaded', function(){
+    Sidebar.load();
+});

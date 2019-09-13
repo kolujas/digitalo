@@ -1,12 +1,27 @@
-.menu{
-    cursor: pointer;
+.nav-menu{
+    height: 4.6rem;
+    z-index: 100;
 }
 
-.menuIcono{
-    height: 2rem;
+.btnSidebar{
+    cursor: pointer;
     position: absolute;
-    left: 1rem;
-    top: 1rem;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.btnIcon{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu h1{
+    text-align: center;
+    line-height: 4.6rem;
+    height: 100%;
 }
 
 .sidebar{
@@ -29,7 +44,7 @@
 
 .sidebar ul{
     margin-left: 2rem;
-    margin-top: 4rem;
+    margin-top: 4.6rem;
 }
 
 .sidebar ul li{
@@ -46,10 +61,81 @@
     text-decoration: none;
 }
 
-.cerarMenu{
+.btnClose{
     position: absolute;
     right: 1rem;
     top: 1rem;
     font-size: 2rem;
     color: #fff;
+}
+
+/* MD */
+@media(min-width: 768px){
+    
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .nav-menu{
+        display: flex;
+        padding: 0;
+    }
+
+    .nav-menu h1{
+        flex-basis: 50%;
+        height: 100%;
+        line-height: 4.6rem;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .btnSidebar{
+        display: none;
+    }
+
+    .sidebar{
+        flex-basis: 50%;
+        height: 100%;
+        background: transparent;
+        color: #000;
+        position: relative;
+    }
+
+    .sidebar.closed{
+        transform: none;
+    }
+
+    .sidebar .btnClose{
+        display: none;
+    }
+
+    .sidebar ul{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        height: 100%;
+    }
+
+    .sidebar ul li{
+        width: fit-content;
+        border: none;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        padding-right: 1.5rem;
+    }
+
+    .sidebar ul li a{
+        color: #000;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* XL */
+@media(min-width: 1200px){
+
 }

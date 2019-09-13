@@ -1,7 +1,6 @@
 /* Banner */
-
 .banner-video{
-    height: calc(100vh - 4rem);
+    height: calc(100vh);
     background: url('/img/student.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -424,6 +423,10 @@
         padding: 0;
     }
 
+    .sidebar a{
+        position: relative;
+    }
+
     .servicios .cards-servicios{
         position: relative;
         transition: 500ms;
@@ -433,15 +436,23 @@
         border-bottom: 0;
     }
     
-    .servicios .cards-servicios .border{
+    .border{
         content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
         right: 50%;
         height: 2px;
-        background-color: #171A21;
+        background-color: black;
         transition: 500ms;
+    }
+    
+    .top-menu .sidebar a .border{
+        background-color: white;
+    }
+    
+    .sidebar a .border{
+        top: calc(65% + 2px);
     }
 
     .servicios .cards-servicios:hover{
@@ -450,6 +461,7 @@
         transform: translateY(-5px);
     }
 
+    .sidebar a:hover .border,
     .servicios .cards-servicios:hover .border{
         left: 0;
         right: 0;
@@ -458,7 +470,7 @@
     /* portafolio */
 
     .cards-portafolio{
-        width: 30rem;
+        width: 30%;
     }
 
     /* newsletter */

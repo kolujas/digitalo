@@ -70,15 +70,17 @@
         <section class="separacion-uno">
             <div class="divPadre">
                 <div>
-                    <h3>¿Te gustaría tener tu propio sitio web?</h3>
-                </div>
+                    <div>
+                        <h3>¿Te gustaría tener tu propio sitio web?</h3>
+                    </div>
 
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ullam fugit delectus eveniet ipsa culpa.</p>
-                </div>
-                
-                <div>
-                    <button>si</button>
+                    <div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ullam fugit delectus eveniet ipsa culpa.</p>
+                    </div>
+                    
+                    <div>
+                        <button>si</button>
+                    </div>
                 </div>
 
                 <div class="divFinal">

@@ -21,22 +21,48 @@ body{
 
 /* Header */
 .header{
-    background-color: var(--blanco);
-    height: 4rem;
-    padding-top: 1rem;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 500ms;
+}
+
+.header.bottom-menu{
+    background: white;
 }
 
 .header h1{
     font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
+    transition: 500ms;
 }
 
-.cerrarMenu{
+.header.top-menu h1{
+    color: white;
+    text-shadow: 0px 0px 19px #000;
+}
+
+.header.bottom-menu h1{
+    font-family: 'Julius Sans One', sans-serif;
+    color: black;
+    text-shadow: none;
+}
+
+.btnSidebar .btnIcon{
+    filter: invert(1);
+    transition: 500ms;
+}
+
+.bottom-menu .btnSidebar .btnIcon{
+    filter: none;
+}
+
+.btnClose{
     outline: none;
 }
 
-/* footer */
-
+/* Footer */
 .footer{
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -56,7 +82,10 @@ body{
 
 /* LG */
 @media(min-width: 1024px){
-    
+    .header.top-menu .sidebar ul li a{
+        color: white;
+        text-shadow: 0px 0px 19px #000;
+    }
 }
 
 /* XL */
