@@ -1,0 +1,79 @@
+.banner-video{
+    height: calc(100vh);
+    background: url('/img/student.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-video h2, p{
+    color: #fff;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+}
+
+.banner-video h2{
+    padding-top: 56%;
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+    text-shadow: 0px 0px 19px #000;
+}
+
+.banner-video p{
+    font-size: 1.1rem;
+    text-shadow: 0px 0px 15px #000;
+}
+
+
+/* como lo hacemos */
+
+.cards-servicios{
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    border: none;
+    width: 20rem;
+}
+
+.cards-servicios i{
+    font-size: 3rem;
+}
+
+.cards-servicios h3{
+    line-height: 3rem;
+}
+
+.cards-servicios h3 i{
+    padding-right: 1rem;
+    font-size: 3rem;
+    position: relative;
+    top: .5rem;
+}
+
+.cards-servicios p{
+    color: #222;
+    margin: 10% 0;
+}
+
+/* Qué incluye */
+
+.que-incluye{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+}
+
+.que-incluye .tabs{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    display: block;
+    font-size: 1.02rem;
+}
+
+.que-incluye .tabs li i{
+    padding: 0 2rem;
+    font-size: 2rem;
+    position: relative;
+    top: .3rem;
+    
+}
+
