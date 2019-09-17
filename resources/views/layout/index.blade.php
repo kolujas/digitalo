@@ -32,19 +32,19 @@
                 <a href="#" class="btnClose ion-android-close"></a>
 
                 <ul class="ul-menu">
-                    <li><a href="#">
+                    <li><a href="/">
                         Inicio
                         <span class="border"></span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="/desarrollo-web">
                         Desarrollo Web
                         <span class="border"></span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="/marketing-digital">
                         Marketing Digital
                         <span class="border"></span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="#contacto">
                         Contacto
                         <span class="border"></span>
                     </a></li>
@@ -52,13 +52,22 @@
             </div>
         </header>
         
-        @yield('main')
+        <main>
+            @yield('main')
+
+            @component('web.contacto', ['validation' => $validation])
+            @endcomponent
+
+            @component('components.whatsapp')
+            @endcomponent
+        </main>
         
         <footer class="footer">
             <p>Desarrollado por Digitalo &copy</p>
         </footer>
 
         <script src="{{ asset('js/index.js') }}"></script>
+        <script id="validation_autoload" type="text/javascript" src="{{asset('js/Validation/autoload.js')}}"></script>
         <script src="{{ asset('js/sidebar.js') }}"></script>
         @yield('js')
     </body>

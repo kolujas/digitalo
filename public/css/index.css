@@ -62,6 +62,135 @@ body{
     outline: none;
 }
 
+/* Contacto */
+.contacto h2{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto form .div-group{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.contacto form .div-group.inputs .div-inputs{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contacto form .div-group.inputs .div-inputs:last-of-type{
+    margin-bottom: 0;
+}
+
+.contacto input{
+    width: 80%;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 1rem;
+    outline: none;
+    transition: 500ms;
+    height: 2.5rem;
+}
+
+.contacto input::placeholder{
+    font-weight: 1000;
+    color: #777;
+}
+
+.contacto textarea{
+    width: 80%;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    resize: none;
+    outline: none;
+    transition: 500ms;
+    height: 6rem;
+}
+
+.contacto textarea::placeholder{
+    font-weight: 1000;
+    color: #777;
+}
+
+.contacto .div-submit{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contacto button{
+    border: none;
+    background: #252525;
+    color: #fff;
+    padding: .7rem;
+    width: 45%;
+    border-radius: 2px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* contacto validacion */
+
+.div-group input:focus, .div-group textarea:focus{
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+.invalid-tooltip{
+    border-radius: 3px;
+    background: #e16363;
+    margin-top: 1rem;
+    padding: .7rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 800;
+    display: none;
+    height: 2.5rem;
+}
+
+.showed{
+    display: block;
+}
+
+.div-group input.invalid, .div-group textarea.invalid{
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+.div-group input.valid:focus, .div-group input.invalid:focus, .div-group textarea.valid:focus, .div-group textarea.invalid:focus {
+    box-shadow: none;
+}
+
+
+/* WhatsApp */
+.whatsapp{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9999;
+}
+
+.whatsapp img{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
 /* Footer */
 .footer{
     text-align: center;
@@ -77,7 +206,26 @@ body{
 
 /* MD */
 @media(min-width: 768px){
-    
+    /* Contacto */
+    .contacto form .inputs{
+        flex-basis: 50%;
+    }
+
+    .contacto form .div-group.inputs .div-inputs{
+        justify-content: flex-end;
+        padding-right: 1rem
+    }
+
+    .contacto form .mensaje{
+        flex-basis: 50%;
+        justify-content: flex-start;
+        padding-left: 1rem
+    }
+
+    .contacto form .div-group .invalid-tooltip{
+        width: 80%;
+        text-align: center;
+    }
 }
 
 /* LG */
@@ -85,6 +233,16 @@ body{
     .header.top-menu .sidebar ul li a{
         color: white;
         text-shadow: 0px 0px 19px #000;
+    }
+
+    /* Contacto */
+    .contacto form {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contacto .div-submit{
+        margin: 1rem;
     }
 }
 

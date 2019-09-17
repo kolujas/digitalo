@@ -4,6 +4,10 @@
 
     Route::get('/demo', 'WebController@inicio')->name('web.inicio');
 
+    Route::get('/desarrollo-web', 'WebController@desarrollo')->name('web.desarrollo');
+    
+    Route::get('/marketing-digital', 'WebController@marketing')->name('web.marketing');
+
     Route::middleware('auth')->group(function(){
         Route::prefix('panel')->group(function(){
             Route::get('/', 'WebController@panel')->name('web.panel');
