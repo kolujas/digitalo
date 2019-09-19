@@ -1,6 +1,7 @@
 @extends('layout.index')
 
 @section('css')
+    <link href="{{ asset('css/Tabs.css') }}" rel="stylesheet">
     <link href="{{ asset('css/web/desarrollo.css') }}" rel="stylesheet">
 @endsection
 
@@ -49,15 +50,63 @@
 
     <section class="que-incluye">
         <h2>¿Qué Incluye?</h2>
-        <ul class="tabs">
-            
-            <li><a href="#"></a>Web institucional</li>
-                <i class="ion-ios-cart"></i>
-            <li><a href="#"></a>Web a medida</li>
-                <i class="ion-ios-cart"></i>
-            <li><a href="#"></a>eCommerce</li>
-                <i class="ion-ios-cart"></i>
-            
-        </ul>
+        <div class="tabs">
+            <ul class="tab-menu">
+                <li><a href="#tab1">Tab 1</a></li>
+                <li><a href="#tab2">Tab 2</a></li>
+                <li><a href="#tab3">Tab 3</a></li>
+                <li><a href="#tab4">Tab 4</a></li>
+            </ul>
+            <ul class="tab-body">
+                <li id="tab1" class="tab-li">
+                    <h3 class="title">Web Institucional</h3>
+                    <span class="subtitle">presentación</span>
+                    <ul class="list">
+                        <li><span class="arrow">-></span>Banner principal</li>
+                        <li><span class="arrow">-></span>Catálogo de productos</li>
+                        <li><span class="arrow">-></span>Secciones institucionales personalizables</li>
+                        <li><span class="arrow">-></span>Formularios de inscripción / contacto personalizados</li>
+                    </ul>
+                </li>
+                <li id="tab2" class="tab-li">
+                    <h3 class="title">Web a Medida</h3>
+                    <span class="subtitle">multiples secciónes</span>
+                    <ul class="list">
+                        <li><span class="arrow">-></span>Banner principal</li>
+                        <li><span class="arrow">-></span>Catálogos de productos</li>
+                        <li><span class="arrow">-></span>Secciones institucionales personalizables</li>
+                        <li><span class="arrow">-></span>Formularios de inscripción / contacto personalizados</li>
+                        <li><span class="arrow">-></span>Detalle personalizado de productos</li>
+                    </ul>
+                </li>
+                <li id="tab3" class="tab-li">
+                    <h3 class="title">Web autoadministrable</h3>
+                    <span class="subtitle">manejo de información</span>
+                    <ul class="list">
+                        <li><span class="arrow">-></span>Banner principal</li>
+                        <li><span class="arrow">-></span>Catálogos de productos</li>
+                        <li><span class="arrow">-></span>Secciones institucionales personalizables</li>
+                        <li><span class="arrow">-></span>Formularios de inscripción / contacto personalizados</li>
+                        <li><span class="arrow">-></span>Detalle personalizado de productos</li>
+                        <li><span class="arrow">-></span>Panel de mantenimiento</li>
+                        <li><span class="arrow">-></span>Manejo de categorias, productos, etc</li>
+                    </ul>
+                </li>
+                <li id="tab4" class="tab-li">
+                    <h3 class="title">eCommerce</h3>
+                    <span class="subtitle">venta online</span>
+                    <ul class="list">
+                        <li><span class="arrow">-></span>Banner principal</li>
+                        <li><span class="arrow">-></span>Catálogos de productos</li>
+                        <li><span class="arrow">-></span>Secciones institucionales personalizables</li>
+                        <li><span class="arrow">-></span>Formularios de inscripción / contacto personalizados</li>
+                        <li><span class="arrow">-></span>Detalle personalizado de productos</li>
+                        <li><span class="arrow">-></span>Panel de mantenimiento</li>
+                        <li><span class="arrow">-></span>Manejo de categorias, productos, etc</li>
+                        <li><span class="arrow">-></span>Venta online de un producto / servicio</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 @endsection

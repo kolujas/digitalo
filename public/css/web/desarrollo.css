@@ -24,8 +24,7 @@
 }
 
 
-/* como lo hacemos */
-
+/* Como lo hacemos */
 .cards-servicios{
     margin: 0 auto;
     padding: 1rem 1rem;
@@ -54,26 +53,27 @@
 }
 
 /* Qué incluye */
-
 .que-incluye{
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
 }
 
-.que-incluye .tabs{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+.tabs .tab-body .tab-li .subtitle{
+    font-weight: bold;
     display: block;
-    font-size: 1.02rem;
+    margin-bottom: 1rem;
 }
 
-.que-incluye .tabs li i{
-    padding: 0 2rem;
-    font-size: 2rem;
-    position: relative;
-    top: .3rem;
-    
+.tabs .tab-body .tab-li p{
+    color: black;
 }
 
+.tabs .tab-body .tab-li .list{
+    text-align: left;
+}
+
+.tabs .tab-body .tab-li .arrow{
+    font-weight: bold;
+    margin-right: 15px;
+    letter-spacing: -5px;
+}
