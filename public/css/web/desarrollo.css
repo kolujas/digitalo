@@ -26,6 +26,13 @@
 
 
 /* Como lo hacemos */
+
+.servicios h2{
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 2.5rem 0 1rem 0;
+    text-align: center;
+}
+
 .cards-servicios{
     margin: 0 auto;
     padding: 1rem 1rem;
@@ -46,6 +53,10 @@
     font-size: 3rem;
     position: relative;
     top: .5rem;
+}
+
+.flechita-abajo{
+    display: block;
 }
 
 .cards-servicios p{
@@ -83,4 +94,21 @@
     font-weight: bold;
     margin-right: 15px;
     letter-spacing: -5px;
+}
+
+
+@media(min-width: 768px){
+    /* Servicios */
+    .servicios h2{
+        width: 100%;
+    }
+
+    .cards-servicios{
+        margin: 0;
+    }
+
+    .flechita-abajo{
+        display: none;
+    }
+
 }

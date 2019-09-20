@@ -15,7 +15,7 @@
         <p>Diseño y desarrollo de sitios web institucionales & eCommerce.</p>
     </section>
 
-    <section class="como-lo-hacemos"><section class="servicios">
+    <section class="servicios">
         <h2>¿Cómo lo hacemos?</h2>
 
         <div class="cards-servicios">
