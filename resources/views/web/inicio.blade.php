@@ -93,7 +93,7 @@
         <h2>Portfolio</h2>
         <a href="https://mutualcoop.org.ar" target="_blank" class="cards-portafolio">
             <figure>
-                <img src="{{asset('storage/webs/Mutualcoop.png')}}" alt="Italian Trulli">
+                <img src="{{asset('img/webs/Mutualcoop.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
                     <h3>Mutualcoop</h3>
                 </div>
@@ -102,7 +102,7 @@
 
         <a href="https://epem.com.ar" target="_blank" class="cards-portafolio">
             <figure>
-                <img src="{{asset('storage/webs/EPEM.png')}}" alt="Italian Trulli">
+                <img src="{{asset('img/webs/EPEM.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
                     <h3>EPEM</h3>
                 </div>
@@ -111,7 +111,7 @@
 
         <a href="http://electrodelparque.com.ar/" target="_blank" class="cards-portafolio">
             <figure>
-                <img src="{{asset('storage/webs/Electro.png')}}" alt="Italian Trulli">
+                <img src="{{asset('img/webs/Electro.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
                     <h3>Electromédica del parque</h3>
                 </div>
