@@ -22,7 +22,7 @@
         @yield('css')
     </head>
     <body>
-        <header class="header nav-menu top-menu">
+        <header class="header nav-menu">
             <a href="#" class="btnSidebar">
                 <img class="btnIcon" src="img/menu.svg" alt="menu icono digitalo">
             </a>
@@ -67,9 +67,11 @@
             <p>Desarrollado por Digitalo &copy</p>
         </footer>
 
+        <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ asset('js/index.js') }}"></script>
         <script id="validation_autoload" type="text/javascript" src="{{asset('js/Validation/autoload.js')}}"></script>
         <script src="{{ asset('js/sidebar.js') }}"></script>
+        <script src="{{ asset('js/headroom.js') }}"></script>
         @yield('js')
     </body>
 </html>
