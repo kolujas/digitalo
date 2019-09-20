@@ -91,32 +91,32 @@
 
     <section class="portafolio impar">
         <h2>Portfolio</h2>
-        <div class="cards-portafolio">
+        <a href="https://mutualcoop.org.ar" target="_blank" class="cards-portafolio">
             <figure>
-                <img src="https://thewallpaper.co//wp-content/uploads/2016/10/nice-wallpaper-hd-free-desktop-wallpapers-hd-4k-high-definition-windows-10-mac-apple-backgrounds-download-wallpaper-1920x1080.jpg" alt="Italian Trulli">
+                <img src="{{asset('storage/webs/Mutualcoop.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
                     <h3>Mutualcoop</h3>
                 </div>
             </figure>
-        </div>
+        </a>
 
-        <div class="cards-portafolio">
+        <a href="https://epem.com.ar" target="_blank" class="cards-portafolio">
             <figure>
-                <img src="https://thewallpaper.co//wp-content/uploads/2016/10/nice-wallpaper-hd-free-desktop-wallpapers-hd-4k-high-definition-windows-10-mac-apple-backgrounds-download-wallpaper-1920x1080.jpg" alt="Italian Trulli">
+                <img src="{{asset('storage/webs/EPEM.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
                     <h3>EPEM</h3>
                 </div>
             </figure>
-        </div>
+        </a>
 
-        <div class="cards-portafolio">
+        <a href="http://electrodelparque.com.ar/" target="_blank" class="cards-portafolio">
             <figure>
-                <img src="https://thewallpaper.co//wp-content/uploads/2016/10/nice-wallpaper-hd-free-desktop-wallpapers-hd-4k-high-definition-windows-10-mac-apple-backgrounds-download-wallpaper-1920x1080.jpg" alt="Italian Trulli">
+                <img src="{{asset('storage/webs/Electro.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
                     <h3>Electro del parque</h3>
                 </div>
             </figure>
-        </div>
+        </a>
     </section> 
 
     <section class="separacion-dos">
