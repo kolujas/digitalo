@@ -52,13 +52,13 @@
         <h2>¿Qué Incluye?</h2>
         <div class="tabs">
             <ul class="tab-menu">
-                <li><a href="#tab1">Tab 1</a></li>
-                <li><a href="#tab2">Tab 2</a></li>
-                <li><a href="#tab3">Tab 3</a></li>
-                <li><a href="#tab4">Tab 4</a></li>
+                <li><a href="#tab1" class="active">Web Institucional</a></li>
+                <li><a href="#tab2">Web a Medida</a></li>
+                <li><a href="#tab3">Web Autoadministrable</a></li>
+                <li><a href="#tab4">eCommerce</a></li>
             </ul>
             <ul class="tab-body">
-                <li id="tab1" class="tab-li">
+                <li id="tab1" class="tab-li active">
                     <h3 class="title">Web Institucional</h3>
                     <span class="subtitle">presentación</span>
                     <ul class="list">
@@ -80,7 +80,7 @@
                     </ul>
                 </li>
                 <li id="tab3" class="tab-li">
-                    <h3 class="title">Web autoadministrable</h3>
+                    <h3 class="title">Web Autoadministrable</h3>
                     <span class="subtitle">manejo de información</span>
                     <ul class="list">
                         <li><span class="arrow">-></span>Banner principal</li>
@@ -109,4 +109,8 @@
             </ul>
         </div>
     </section>
+@endsection
+
+@section('js')
+    <script type="text/javascript" src="{{asset('js/Tabs.js')}}"></script>
 @endsection

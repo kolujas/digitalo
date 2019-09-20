@@ -68,7 +68,12 @@
         </footer>
 
         <script src="{{ asset('js/index.js') }}"></script>
-        <script id="validation_autoload" type="text/javascript" src="{{asset('js/Validation/autoload.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Invalidator.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Validator.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Requirements.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Messages.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Rules.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Validation.js')}}"></script>
         <script src="{{ asset('js/sidebar.js') }}"></script>
         @yield('js')
     </body>
