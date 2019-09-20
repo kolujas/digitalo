@@ -22,7 +22,7 @@
         @yield('css')
     </head>
     <body>
-        <header class="header nav-menu">
+        <header class="header nav-menu top-menu">
             <a href="#" class="btnSidebar">
                 <img class="btnIcon" src="img/menu.svg" alt="menu icono digitalo">
             </a>
@@ -33,7 +33,7 @@
                 <a href="#" class="btnClose ion-android-close"></a>
 
                 <ul class="ul-menu">
-                    <li><a href="/">
+                    <li><a href="/demo">
                         Inicio
                         <span class="border"></span>
                     </a></li>
@@ -69,9 +69,17 @@
 
         <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ asset('js/index.js') }}"></script>
-        <script id="validation_autoload" type="text/javascript" src="{{asset('js/Validation/autoload.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Invalidator.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Validator.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Requirements.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Messages.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Rules.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/Validation/Validation.js')}}"></script>
         <script src="{{ asset('js/sidebar.js') }}"></script>
         <script src="{{ asset('js/headroom.js') }}"></script>
+        <script>
+            Validation.load();
+        </script>
         @yield('js')
     </body>
 </html>

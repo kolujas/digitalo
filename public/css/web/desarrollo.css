@@ -71,6 +71,10 @@
     text-align: center;
 }
 
+.que-incluye h2{
+    margin: 2rem;
+}
+
 .tabs .tab-body .tab-li .subtitle{
     font-weight: bold;
     display: block;
