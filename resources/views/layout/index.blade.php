@@ -75,6 +75,9 @@
         <script type="text/javascript" src="{{asset('js/Validation/Rules.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/Validation/Validation.js')}}"></script>
         <script src="{{ asset('js/sidebar.js') }}"></script>
+        <script>
+            Validation.load();
+        </script>
         @yield('js')
     </body>
 </html>
