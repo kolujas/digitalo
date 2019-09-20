@@ -62,6 +62,10 @@ body{
     outline: none;
 }
 
+.sidebar ul li a{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Contacto */
 .contacto h2{
     font-family: 'Julius Sans One', sans-serif;
@@ -194,7 +198,7 @@ body{
 /* Footer */
 .footer{
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     background-color: #252525;
     margin-top: 2rem;

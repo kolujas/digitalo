@@ -8,17 +8,16 @@
 
 /* Servicios */
 .servicios{
-    margin: 4rem 0;
     text-align: center;
 }
 
 .servicios h2{
     font-family: 'Julius Sans One', sans-serif;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .servicios p{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0 2rem;
 }
 
@@ -98,14 +97,15 @@
 }
 
 .cards-portafolio{
-    margin: 2rem 0 0 0;
-    padding: 0 2rem;
+    margin: 2rem 2rem 0 2rem;
+    display: block;
+    width: fit-content;
+    height: fit-content;
 }
 
 .portafolio figure{
     border-radius: .25rem;
     position: relative;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     border: 1px solid rgba(51, 51, 51, 0.281);
@@ -121,6 +121,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    transition: 500ms;
 }
 
 .portafolio .footer-card h3{
@@ -128,7 +129,7 @@
     background: white;
     padding: 1rem 0;
     color: black;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Newsletter */
@@ -235,13 +236,14 @@
         flex-wrap: wrap;
     }
 
-    .portafolio.impar::after {
-        content: "";
-        width: 20rem;
+    .cards-portafolio{
+        width: 40%;
+        margin: 2rem 0 0 0;
     }
 
-    .cards-portafolio{
-        width: 20rem;
+    .portafolio.impar::after {
+        content: "";
+        width: 40%;
     }
 
     /* Newsletter */
@@ -326,6 +328,21 @@
     /* Portfolio */
     .cards-portafolio{
         width: 30%;
+        margin: 2rem 1rem 0 1rem;
+    }
+
+    .portafolio .footer-card{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: 500ms;
+        transform: translateY(100%);
+    }
+    
+    .portafolio .cards-portafolio:hover .footer-card{
+        transform: translateY(0);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .3);
     }
 
     /* Newsletter */

@@ -7,7 +7,8 @@
 
 .banner-video h2, p{
     color: #fff;
-    font-family: 'Julius Sans One', sans-serif;
+    padding: 0 2rem;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
@@ -50,11 +51,12 @@
 .cards-servicios p{
     color: #222;
     margin: 10% 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Qué incluye */
 .que-incluye{
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
@@ -73,6 +75,7 @@
 }
 
 .tabs .tab-body .tab-li .arrow{
+    font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     margin-right: 15px;
     letter-spacing: -5px;

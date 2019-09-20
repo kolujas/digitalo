@@ -113,7 +113,7 @@
             <figure>
                 <img src="{{asset('storage/webs/Electro.png')}}" alt="Italian Trulli">
                 <div class="footer-card">
-                    <h3>Electro del parque</h3>
+                    <h3>Electromédica del parque</h3>
                 </div>
             </figure>
         </a>
