@@ -14,7 +14,11 @@
 
 @section('main')
     <section class="banner-video">
-        
+        <div>
+            <h2>Somos tu partner Digital</h2>
+            <h3>Podemos ayudarte a implementar una estrategia digital para tu negocio</h3>
+            <button>Contactanos</button>
+        </div>
     </section>
 
     <section class="servicios">
