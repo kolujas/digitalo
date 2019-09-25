@@ -112,3 +112,28 @@
     }
 
 }
+
+
+@media(min-width: 1024px){
+    .servicios{
+        justify-content: space-around;
+        margin: 4rem auto;
+        width: 63.2rem;
+    }
+
+    .servicios .cards-servicios{
+        margin: 1rem 0;
+    }
+}
+
+
+@media(min-width: 1200px){
+    .banner-video h2 {
+            padding-top: 20%;
+    }
+
+    .servicios{
+        margin: 4rem auto;
+        width: 70rem;
+    }
+}
