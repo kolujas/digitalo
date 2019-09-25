@@ -17,7 +17,6 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/web/inicio.css') }}">
         <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
         @yield('css')
     </head>

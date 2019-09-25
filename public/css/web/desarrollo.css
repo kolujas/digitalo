@@ -1,31 +1,66 @@
+/* Banner */
 .banner-video{
     height: calc(100vh);
     background: url('/img/student.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.banner-video h2, p{
-    color: #fff;
-    padding: 0 2rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+.banner-video div{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .banner-video h2{
-    padding-top: 56%;
-    padding-bottom: 2rem;
     font-size: 2.2rem;
-    text-shadow: 0px 0px 19px #000;
+    flex-basis: 100%;
+    color: white;
+    text-shadow: 0px 0px 10px #000;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
 }
 
-.banner-video p{
-    font-size: 1.1rem;
-    text-shadow: 0px 0px 15px #000;
+.banner-video h3{
+    flex-basis: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px #000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem 1.5rem;
+    font-weight: normal;
 }
 
+.banner-video button{
+    border-radius: 2px;
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 2rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    outline: none;
+    border: 1px solid #fff;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #000;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 500ms;
+}
 
-/* Como lo hacemos */
+.banner-video button:hover,
+.banner-video button:focus{
+    width: 10.2rem;
+}
+
+/* Servicios */
+.servicios{
+    text-align: center;
+}
 
 .servicios h2{
     font-family: 'Julius Sans One', sans-serif;
@@ -46,6 +81,9 @@
 
 .cards-servicios h3{
     line-height: 3rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1rem;
 }
 
 .cards-servicios h3 i{
@@ -96,14 +134,26 @@
     letter-spacing: -5px;
 }
 
-
+/* MD */
 @media(min-width: 768px){
+    /* Banner */
+    .banner-video h3{
+        padding: 2rem 25%;
+    }
+
     /* Servicios */
+    .servicios{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
     .servicios h2{
         width: 100%;
     }
 
     .cards-servicios{
+        width: 20rem;
         margin: 0;
     }
 
@@ -113,8 +163,37 @@
 
 }
 
-
+/* LG */
 @media(min-width: 1024px){
+    .sidebar a{
+        position: relative;
+    }
+    
+    .border{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        height: 2px;
+        background-color: black;
+        transition: 500ms;
+    }
+    
+    .top-menu .sidebar a .border{
+        background-color: white;
+    }
+    
+    .sidebar a .border{
+        top: calc(65% + 2px);
+    }
+
+    /* Banner */
+    .banner-video h3{
+        padding: 2rem 35%;
+    }
+
+    /* Servicios */
     .servicios{
         justify-content: space-around;
         margin: 4rem auto;
@@ -123,17 +202,43 @@
 
     .servicios .cards-servicios{
         margin: 1rem 0;
+        position: relative;
+        transition: 500ms;
+        background-color: #e2e2e2;
+        border-radius: .25rem;
+        overflow: hidden;
+        border-bottom: 0;
+    }
+
+    .cards-servicios p{
+        padding: 0;
+    }
+
+    .servicios .cards-servicios:hover{
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        transform: translateY(-5px);
+    }
+
+    .sidebar a:hover .border,
+    .servicios .cards-servicios:hover .border{
+        left: 0;
+        right: 0;
     }
 }
 
-
+/* XL */
 @media(min-width: 1200px){
-    .banner-video h2 {
-            padding-top: 20%;
-    }
-
+    /* Servicios */
     .servicios{
         margin: 4rem auto;
         width: 70rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
+
+    .cards-servicios{
+        width: 20rem;
+    } 
 }
