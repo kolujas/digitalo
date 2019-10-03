@@ -26,7 +26,9 @@
                 <img class="btnIcon" src="img/menu.svg" alt="menu icono digitalo">
             </a>
 
-            <h1>Digitalo</h1>
+            <h1>
+                <!-- <span class="logo"></span> -->
+                Digitalo</h1>
 
             <div class="sidebar closed">
                 <a href="#" class="btnClose ion-android-close"></a>

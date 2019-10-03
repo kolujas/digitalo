@@ -92,18 +92,24 @@
 
 /* Separacion uno */
 .separacion-uno{
-    min-height: 100vh;    
+    min-height: 100vh;
     margin: 3rem 0;
-    padding: 3rem 0;
+    padding: 2rem;
     background: url('https://steamuserimages-a.akamaihd.net/ugc/813306660768811647/6C9FA5908AA6A4D73F6F78CBFA0F1987560F5ACC/') no-repeat center center;
     font-family: 'Julius Sans One', sans-serif;
+    background-attachment: fixed;
 }
 
 .separacion-uno .divPadre{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20%;
+}
+
+.separacion-uno .divPadre > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .separacion-uno .divFinal{
@@ -280,6 +286,13 @@
         width: 20rem;
     } 
 
+
+    /* Separacion uno */
+
+    .separacion-uno .divPadre > div{
+        padding: 0 3rem;
+    }
+
     /* Portafolio */
     .portafolio h2{
         width: 100%;
@@ -385,6 +398,21 @@
         right: 0;
     }
 
+/* separacion-uno */
+
+    .separacion-uno{
+        min-height: fit-content;
+    }
+
+    .separacion-uno .divPadre > div {
+        padding: 0 3rem;
+        width: 50%;
+    }
+
+    .separacion-uno .divPadre h3{
+        padding-top: 5rem;
+    }
+
     /* Portfolio */
     .cards-portafolio{
         width: 30%;
@@ -432,6 +460,14 @@
     .cards-servicios{
         width: 20rem;
     } 
+
+
+    /* separacion-uno */
+
+    .separacion-uno .divPadre > div {
+        padding: 0 3rem;
+        width: 35%;
+    }
 
     /* Portafolio */
     .portafolio h2{

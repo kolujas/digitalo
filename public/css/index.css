@@ -38,6 +38,10 @@ body{
     transition: 500ms;
 }
 
+.header .logo{
+    background: url('/img/logo.png') no-repeat left center;
+}
+
 .header.top-menu h1{
     color: white;
     text-shadow: 0px 0px 19px #000;
